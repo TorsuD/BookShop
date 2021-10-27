@@ -1,5 +1,7 @@
 const { ApolloServer, gql } = require("apollo-server");
 
+const port = process.env.PORT || 8008;
+
 const books = [
   {
     title: "Harry Potter",
@@ -55,7 +57,7 @@ const server = new ApolloServer({
 });
 
 server
-  .listen(8008)
+  .listen(port)
   .then(({ url, port }) => {
     console.log(`Server ready at ${url} and ready to be used`);
   })
