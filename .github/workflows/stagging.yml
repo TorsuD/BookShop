@@ -17,5 +17,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "hidden-lowlands-29050"
+          heroku_app_name: "tranquil-headland-52709"
           heroku_email: "torsuderrick2004@gmail.com"
