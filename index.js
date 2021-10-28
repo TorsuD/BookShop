@@ -13,6 +13,24 @@ const books = [
     author: "E.L. James",
     ISBN: "074-45237",
   },
+
+  {
+    title: "Champagne Poetry",
+    author: "Fred Johnson",
+    ISBN: "045-7864",
+  },
+
+  {
+    title: "Girls want girls",
+    author: "E.C> Drake",
+    ISBN: "667-5667",
+  },
+
+  {
+    title: "You Only Live Twice",
+    author: "Z.N. James",
+    ISBN: "074-45237",
+  },
 ];
 
 //Creating a Schema
@@ -60,7 +78,7 @@ const server = new ApolloServer({
 
 server
   .listen(port)
-  .then(({ url, port }) => {
+  .then(({ url }) => {
     console.log(`Server ready at ${url} and ready to be used`);
   })
   .catch((err) => console.log(err));
